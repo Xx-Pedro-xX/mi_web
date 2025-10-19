@@ -1,70 +1,105 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>mi_web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: aquamarine;
+            background-image: url(https://estudioskyline.com/wp-content/uploads/2021/06/Moon-1-1024x682.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .menu {
+            width: 150px;
+            background-color: #28ebaa81;
+            border: 1px #0e865e solid;
+            border-radius: 10px;
+            font-size: 15px;
+            padding: 7px;
+            box-sizing: border-box;
+            position: fixed;
+            top: auto;
+            left: 20px;
+        }
+
+        .titulo {
+            width: 400px;
+            background-color: #4feb28c5;
+            border: 1px #0e865e solid;
+            border-radius: 10px;
+            margin: 40px auto;
+            box-sizing: border-box;
+        }
+
+        .texto {
+            background-color: #8d28ebc5;
+            width: 600px;
+            border: black 1px solid;
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: aquamarine;
-        background-image: url(https://estudioskyline.com/wp-content/uploads/2021/06/Moon-1-1024x682.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-    }
-
-    .menu {
-        width: 150px;
-        position: float;
-        top: 250px;
-        background-color: #28ebaa81;
-        border: 1px #0e865e solid;
-        border-radius: 10px;
-        font: 15px;
-        padding: 7px;
-        box-sizing: border-box;
-    }
-    .titulo {
-        width: 400px;
-        background-color: #4feb28c5;
-        border: 1px #0e865e solid;
-        border-radius: 10px;
-        margin-left: 40%;
-        box-sizing: border-box;
-    }
-    .texto {
-        margin-left: 35%;
-        background-color: #8d28ebc5;
-        width: 600px;
-        border: black 1px solid;
-        border-radius: 10px;
-        margin-top: 20px;
-    }
-</style>
-
 <body>
+
     <div class="menu">
         <b>SALA MOON</b>
         <ul>
-            <li><a href=#info>Informacion</a></li>
-            <li><a href=#ubi>Ubicación</a></li>
-            <li><a href=#cont>Contenido</a></li>
+            <li><a href="#info">Información</a></li>
+            <li><a href="#ubi">Ubicación</a></li>
+            <li><a href="#cont">Contenido</a></li>
         </ul>
-
     </div>
-</body>
 
-<body>
     <div class="titulo">
-        <H1>Sala Moon Valencia</H1>
+        <h1>Sala Moon Valencia</h1>
     </div>
 
     <div class="texto">
-        <h2 id="info">Informacion</h2>
-        <p id="info">La Sala Moon es un espacio cultural ubicado en Valencia, España. Ofrece una variedad de eventos y actividades artísticas, incluyendo exposiciones de arte, conciertos, talleres y proyecciones de cine. La sala se destaca por su ambiente acogedor y su compromiso con la promoción de la cultura local e internacional.</p>
+        <h2 id="info">Información</h2>
+        <p>La Sala Moon es un espacio cultural ubicado en Valencia, España. Ofrece una variedad de eventos y actividades artísticas, incluyendo exposiciones de arte, conciertos, talleres y proyecciones de cine. La sala se destaca por su ambiente acogedor y su compromiso con la promoción de la cultura local e internacional.</p>
     </div>
+
+    <div class="titulo">
+        <h2 id="ubi">Ubicación</h2>
+        </div>
+        <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760.2920566141239!2d-0.38337307976828483!3d39.45901477843415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60458fd5b6e1b3%3A0x8ff8a7712dc56263!2sSala%20Moon%20Valencia!5e0!3m2!1ses!2ses!4v1760884642416!5m2!1ses!2ses"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div class="titulo">
+        <h2 id="cont">Contenido</h2>
+        </div>
+        <div>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/watch?v=_qt5wFkz2cI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <footer>Gracias por leer</footer>
 </body>
+</html>
